@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.29c8878c.css",
+    "main.js": "/static/js/main.3f6dc5d9.js",
+    "static/media/profilepic.jpg": "/static/media/profilepic.ff6d06dc6aa701318169.jpg",
+    "static/media/A_Ramya_Resume.pdf": "/static/media/A_Ramya_Resume.ad479bbf29d7fd9ebf56.pdf",
+    "static/media/gameDark.png": "/static/media/gameDark.b3b846f6c7bba18ab4f1.png",
+    "static/media/quizDark.png": "/static/media/quizDark.e018620358c914979559.png",
+    "static/media/portfolioDark.png": "/static/media/portfolioDark.0291f2742f74b1760071.png",
+    "static/media/portfolioLight.png": "/static/media/portfolioLight.45272d7711549d27ddd8.png",
+    "index.html": "/index.html",
+    "main.29c8878c.css.map": "/static/css/main.29c8878c.css.map",
+    "main.3f6dc5d9.js.map": "/static/js/main.3f6dc5d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29c8878c.css",
+    "static/js/main.3f6dc5d9.js"
+  ]
+}
