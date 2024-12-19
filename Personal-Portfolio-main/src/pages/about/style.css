@@ -1,0 +1,157 @@
+.sec_sp {
+    margin-bottom: calc(3rem + 5.128vw);
+}
+
+.table td,
+.table th {
+    color: var(--text-color);
+}
+
+.t_border {
+    border-color: var(--text-color) !important;
+}
+
+.progress-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 15px 0 20px;
+    font-family: 'Raleway';
+}
+
+.progress {
+    height: 5px;
+    background: var(--bg-color);
+    border-radius: 30px;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+
+.progress .progress-bar {
+    position: relative;
+    background: var(--text-color);
+    animation: animate-positive 2s;
+    overflow: visible;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.progress .progress-value {
+    position: absolute;
+    top: -30px;
+    right: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--text-color);
+}
+
+.card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color-2);
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border: 1px solid var(--text-color-3);
+}
+
+.section-title {
+    font-size: 45px;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+.education-item, .work-item {
+    position: relative;
+    padding: 20px 0; /* Even padding above and below each item */
+    margin: 0; /* Remove extra margin */
+    border-bottom: 1px solid  var(--text-color); /* Horizontal line after each item */
+    border-bottom-right-radius: 10px;
+    border-bottom-width: 2px;
+}
+
+.education-item:last-child, .work-item:last-child {
+    border-bottom: none; /* Remove the line after the last item */
+}
+
+.education-item h5, .work-item h5 {
+    margin-bottom: 10px; /* Space between title and content */
+}
+
+.education-item p, .work-item p {
+    margin: 5px 0; /* Consistent spacing between paragraphs */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .date-text p {
+        font-size: 12px;
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .d-flex {
+        display: block;
+    }
+
+    .text-right {
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .education-item, .work-item {
+        padding-left: 0; /* Remove left padding for mobile */
+    }
+}
+
+@-webkit-keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+@keyframes animate-positive {
+    0% {
+        width: 0%;
+    }
+}
+
+.service__title {
+    padding: 8px 0;
+    border-bottom: solid 2px var(--secondary-color);
+}
+
+.service-section .service-category-title {
+    padding-bottom: 4px;
+}
+
+/*! CSS Used keyframes */
+
+@-webkit-keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}

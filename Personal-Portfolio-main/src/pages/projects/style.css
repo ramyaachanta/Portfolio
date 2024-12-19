@@ -1,0 +1,76 @@
+.po_items_ho {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Adjust spacing between cards */
+    justify-content: center;
+}
+
+.po_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px; /* Adjust the maximum width of the card */
+    background: var(--secondary-color);
+    color:var(--bg-color);
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px 15px 0 var(--boxshadowcolor);
+    transition:  0.3s ease;
+    text-align: left;
+}
+
+.po_item img {
+    max-width: 40%;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;/* Optional: Rounded corners for the image */
+}
+
+.description-text {
+    color: var(--bg-color);
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Space between description and link */
+    text-align: center;
+}
+
+
+.description-inline {
+    color: var(--secondary-color);
+    font-size: 1rem;
+    margin-bottom: 15px; /* Space between description and link */
+    text-align: center;
+}
+
+.po_item .content {
+    width: 100%;
+    text-align: center;
+}
+
+.po_item .content a {
+    display: inline-block;
+    background: var(--secondary-color);
+    border: solid 2px var(--text-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.po_item .content a:hover {
+    background: var(--bg-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+.po_item:hover {
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+    .po_item {
+        max-width: 100%;
+    }
+}
