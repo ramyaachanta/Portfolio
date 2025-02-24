@@ -19,7 +19,7 @@ export const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormdata({ loading: true });
+    setFormdata((prevState) => ({ ...prevState, loading: true }));
 
     const templateParams = {
       from_name: formData.email,
@@ -37,31 +37,36 @@ export const ContactUs = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          setFormdata({
+          console.log("Email sent:", result.text);
+          setFormdata((prevState) => ({
+            ...prevState,
             loading: false,
-            alertmessage: "SUCCESS! ,Thankyou for your messege",
+            alertmessage: "SUCCESS! Thank you for your message.",
             variant: "success",
             show: true,
-          });
+            email: "",
+            name: "",
+            message: "",
+          }));
         },
         (error) => {
-          console.log(error.text);
-          setFormdata({
-            alertmessage: `Faild to send!,${error.text}`,
+          console.log("Error:", error.text);
+          setFormdata((prevState) => ({
+            ...prevState,
+            loading: false,
+            alertmessage: `Failed to send! ${error.text}`,
             variant: "danger",
             show: true,
-          });
-          document.getElementsByClassName("co_alert")[0].scrollIntoView();
+          }));
         }
       );
   };
 
   const handleChange = (e) => {
-    setFormdata({
-      ...formData,
+    setFormdata((prevState) => ({
+      ...prevState,
       [e.target.name]: e.target.value,
-    });
+    }));
   };
 
   return (
@@ -81,12 +86,13 @@ export const ContactUs = () => {
         <Row className="sec_sp">
           <Col lg="12">
             <Alert
-              //show={formData.show}
               variant={formData.variant}
               className={`rounded-0 co_alert ${
                 formData.show ? "d-block" : "d-none"
               }`}
-              onClose={() => setFormdata({ show: false })}
+              onClose={() =>
+                setFormdata((prevState) => ({ ...prevState, show: false }))
+              }
               dismissible
             >
               <p className="my-0">{formData.alertmessage}</p>
@@ -101,10 +107,13 @@ export const ContactUs = () => {
               </a>
               <br />
               <br />
-              {contactConfig.hasOwnProperty("YOUR_FONE") ? (
-                <strong>Phone : <a href={`tel:${contactConfig.YOUR_FONE}`}>{contactConfig.YOUR_FONE}</a></strong>
-              ) : (
-                ""
+              {contactConfig.YOUR_FONE && (
+                <strong>
+                  Phone:{" "}
+                  <a href={`tel:${contactConfig.YOUR_FONE}`}>
+                    {contactConfig.YOUR_FONE}
+                  </a>
+                </strong>
               )}
             </address>
             <p>{contactConfig.description}</p>
@@ -118,7 +127,7 @@ export const ContactUs = () => {
                     id="name"
                     name="name"
                     placeholder="Name"
-                    value={formData.name || ""}
+                    value={formData.name}
                     type="text"
                     required
                     onChange={handleChange}
@@ -131,7 +140,7 @@ export const ContactUs = () => {
                     name="email"
                     placeholder="Email"
                     type="email"
-                    value={formData.email || ""}
+                    value={formData.email}
                     required
                     onChange={handleChange}
                   />
@@ -150,7 +159,7 @@ export const ContactUs = () => {
               <br />
               <Row>
                 <Col lg="12" className="form-group">
-                  <button className="btn ac_btn" type="submit">
+                  <button className="btn ac_btn" type="submit" disabled={formData.loading}>
                     {formData.loading ? "Sending..." : "Send"}
                   </button>
                 </Col>
