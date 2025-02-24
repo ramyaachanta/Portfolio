@@ -180,9 +180,9 @@ const contactConfig = {
     YOUR_EMAIL: "ramyaachanta23@gmail.com",
     YOUR_FONE: "(346)-526-1097",
     description: "Have a project for me? Think I'd be a good fit for your team? I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me.",
-    YOUR_SERVICE_ID: "service_ie7276r",
-    YOUR_TEMPLATE_ID: "template_ir17afs",
-    YOUR_USER_ID: "pZ_qA7MI_Zc7E64oJ",
+    YOUR_SERVICE_ID: "service_lcyxvyc",
+    YOUR_TEMPLATE_ID: "template_3d7nqgu",
+    YOUR_USER_ID: "Ryitj2rXLhwfaij0K",
 };
 
 const socialprofils = {
