@@ -181,9 +181,10 @@ const contactConfig = {
     YOUR_FONE: "(346)-526-1097",
     description: "Have a project for me? Think I'd be a good fit for your team? I'd love to hear from you, give me a shout by email or by using the form below if you'd like to get in contact with me.",
     YOUR_SERVICE_ID: "service_lcyxvyc",
-    YOUR_TEMPLATE_ID: "template_3d7nqgu",
+    AUTO_REPLY_TEMPLATE: "template_3d7nqgu",
+    ADMIN_TEMPLATE:"template_ffw9n13",
     YOUR_USER_ID: "Ryitj2rXLhwfaij0K",
-    
+
 };
 
 const socialprofils = {

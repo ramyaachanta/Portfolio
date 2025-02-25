@@ -21,46 +21,69 @@ export const ContactUs = () => {
     e.preventDefault();
     setFormdata((prevState) => ({ ...prevState, loading: true }));
 
-    const templateParams = {
-      from_name: formData.email,
-      user_name: formData.name,
-      to_name: contactConfig.YOUR_EMAIL,
-      message: formData.message,
+    // Email to Yourself (Receiving User's Message)
+    const adminTemplateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+        to_name: contactConfig.YOUR_EMAIL, // Your email to receive it
     };
 
-    emailjs
-      .send(
+    // Auto-Reply to the Sender
+    const userTemplateParams = {
+        user_name: formData.name,
+        user_email: formData.email,
+        message: formData.message,
+
+    };
+
+    // Send Email to Yourself (Receiving User's Message)
+    emailjs.send(
         contactConfig.YOUR_SERVICE_ID,
-        contactConfig.YOUR_TEMPLATE_ID,
-        templateParams,
+        contactConfig.ADMIN_TEMPLATE,  // Admin template ID
+        adminTemplateParams,
         contactConfig.YOUR_USER_ID
-      )
-      .then(
+    )
+    .then(
         (result) => {
-          console.log("Email sent:", result.text);
-          setFormdata((prevState) => ({
-            ...prevState,
-            loading: false,
-            alertmessage: "SUCCESS! Thank you for your message.",
-            variant: "success",
-            show: true,
-            email: "",
-            name: "",
-            message: "",
-          }));
-        },
-        (error) => {
-          console.log("Error:", error.text);
-          setFormdata((prevState) => ({
+            console.log("Admin Email Sent:", result.text);
+
+            // Send Auto-Reply Email to the Sender
+            return emailjs.send(
+                contactConfig.YOUR_SERVICE_ID,
+                contactConfig.AUTO_REPLY_TEMPLATE, // User auto-reply template ID
+                userTemplateParams,
+                contactConfig.YOUR_USER_ID
+            );
+        }
+    )
+    .then(
+        (result) => {
+            console.log("User Auto-Reply Sent:", result.text);
+            setFormdata((prevState) => ({
+                ...prevState,
+                loading: false,
+                alertmessage: "SUCCESS! Thank you for your message.",
+                variant: "success",
+                show: true,
+                email: "",
+                name: "",
+                message: "",
+            }));
+        }
+    )
+    .catch((error) => {
+        console.log("Error:", error.text);
+        setFormdata((prevState) => ({
             ...prevState,
             loading: false,
             alertmessage: `Failed to send! ${error.text}`,
             variant: "danger",
             show: true,
-          }));
-        }
-      );
-  };
+        }));
+    });
+};
+
 
   const handleChange = (e) => {
     setFormdata((prevState) => ({
