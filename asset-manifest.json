@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.2608b01a.css",
-    "main.js": "/Portfolio/static/js/main.2be00438.js",
+    "main.js": "/Portfolio/static/js/main.304aec4b.js",
     "static/media/profilepic.jpg": "/Portfolio/static/media/profilepic.ff6d06dc6aa701318169.jpg",
-    "static/media/A_Ramya_Resume.pdf": "/Portfolio/static/media/A_Ramya_Resume.ad479bbf29d7fd9ebf56.pdf",
     "static/media/gameDark.png": "/Portfolio/static/media/gameDark.b3b846f6c7bba18ab4f1.png",
     "static/media/quizDark.png": "/Portfolio/static/media/quizDark.e018620358c914979559.png",
     "static/media/portfolioDark.png": "/Portfolio/static/media/portfolioDark.0291f2742f74b1760071.png",
     "static/media/portfolioLight.png": "/Portfolio/static/media/portfolioLight.45272d7711549d27ddd8.png",
+    "static/media/A_Ramya_Resume.pdf": "/Portfolio/static/media/A_Ramya_Resume.89fae9de598752a44596.pdf",
     "index.html": "/Portfolio/index.html",
     "main.2608b01a.css.map": "/Portfolio/static/css/main.2608b01a.css.map",
-    "main.2be00438.js.map": "/Portfolio/static/js/main.2be00438.js.map"
+    "main.304aec4b.js.map": "/Portfolio/static/js/main.304aec4b.js.map"
   },
   "entrypoints": [
     "static/css/main.2608b01a.css",
-    "static/js/main.2be00438.js"
+    "static/js/main.304aec4b.js"
   ]
 }
