@@ -45,6 +45,16 @@ const education = {
 
 const worktimeline = [
     {
+        jobtitle: "Data Analyst Intern",
+        where: "Titan Commercial",
+        date: "July 2025 – Present",
+    },
+    {
+        jobtitle: "ML Software Developer Intern",
+        where: "Object Tech, Inc",
+        date: "May 2025 – Present",
+    },
+    {
         jobtitle: "Student Conduct Council - Hearing Board Member",
         where: "University of Houston-Clear Lake",
         date: "October 2024 - Present",
@@ -56,7 +66,7 @@ const worktimeline = [
     },
     {
         jobtitle: "Full Stack Developer",
-        where: "WIZ",
+        where: "Radar Ventures Private Limited / Wiz",
         date: "September 2022 - December 2023",
     },
     {
@@ -78,53 +88,71 @@ const worktimeline = [
 
 
 const skills = [
-    {
+     {
         category: "Programming Languages",
         items: [
-            { name: "Java", value: 90 },
-            { name: "Python", value: 85 },
+            { name: "Go", value: 85 },
+            { name: "Python", value: 90 },
+            { name: "Java", value: 80 },
             { name: "JavaScript", value: 85 },
-            { name: "GoLang", value: 80 },
-            { name: "Kotlin", value: 75 }
+            { name: "C++", value: 75 },
+            { name: "Kotlin", value: 70 },
+            { name: "UNIX", value: 70 }
         ]
     },
     {
         category: "Frontend Development",
         items: [
-            { name: "HTML", value: 80 },
-            { name: "CSS", value: 80 },
-            { name: "React JS", value: 85 },
-            { name: "Angular", value: 75 },
-            { name: "Tailwind CSS", value: 70 }
+            { name: "React.js", value: 90 },
+            { name: "Next.js", value: 85 },
+            { name: "Angular", value: 70 },
+            { name: "Tailwind CSS", value: 80 },
+            { name: "HTML", value: 85 },
+            { name: "CSS", value: 85 }
         ]
     },
     {
         category: "Backend Development",
         items: [
-            { name: "Django", value: 80 },
-            { name: ".Net", value: 75 },
-            { name: "Node JS", value: 80 },
-            { name: "gRPC", value: 70 },
-            { name: "RESTful API", value: 85 }
+            { name: "Django", value: 85 },
+            { name: "Spring Boot", value: 75 },
+            { name: "Flask", value: 80 },
+            { name: "Node.js", value: 80 },
+            { name: "RESTful API", value: 85 },
+            { name: "gRPC", value: 70 }
         ]
     },
     {
         category: "DevOps and Cloud",
         items: [
-            { name: "Docker", value: 75 },
-            { name: "ArgoCD", value: 70 },
-            { name: "Jenkins", value: 70 },
-            { name: "Git", value: 85 }
+            { name: "Docker", value: 80 },
+            { name: "AWS", value: 85 },
+            { name: "Microsoft Azure", value: 75 },
+            { name: "GCP", value: 70 },
+            { name: "GitHub Actions", value: 70 },
+            { name: "Jenkins", value: 65 }
         ]
     },
     {
         category: "Tools and Databases",
         items: [
-            { name: "PostgreSQL", value: 80 },
+            { name: "PostgreSQL", value: 85 },
             { name: "MySQL", value: 85 },
-            { name: "MongoDB", value: 75 },
-            { name: "Postman", value: 75 },
-            { name: "SonarCube", value: 70 }
+            { name: "MongoDB", value: 80 },
+            { name: "SQLite", value: 75 },
+            { name: "Power BI", value: 85 },
+            { name: "Power Query", value: 75 }
+        ]
+    },
+    {
+        category: "Data & ML",
+        items: [
+            { name: "Scikit-learn", value: 80 },
+            { name: "Pandas", value: 85 },
+            { name: "NumPy", value: 85 },
+            { name: "Matplotlib", value: 80 },
+            { name: "NLP", value: 75 },
+            { name: "Neural Networks", value: 70 }
         ]
     },
     {
