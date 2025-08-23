@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.2608b01a.css",
-    "main.js": "/Portfolio/static/js/main.dbdfb352.js",
+    "main.js": "/Portfolio/static/js/main.b705e385.js",
     "static/media/profilepic.jpg": "/Portfolio/static/media/profilepic.ff6d06dc6aa701318169.jpg",
     "static/media/gameDark.png": "/Portfolio/static/media/gameDark.b3b846f6c7bba18ab4f1.png",
     "static/media/quizDark.png": "/Portfolio/static/media/quizDark.e018620358c914979559.png",
@@ -10,10 +10,10 @@
     "static/media/A_Ramya_Resume.pdf": "/Portfolio/static/media/A_Ramya_Resume.89fae9de598752a44596.pdf",
     "index.html": "/Portfolio/index.html",
     "main.2608b01a.css.map": "/Portfolio/static/css/main.2608b01a.css.map",
-    "main.dbdfb352.js.map": "/Portfolio/static/js/main.dbdfb352.js.map"
+    "main.b705e385.js.map": "/Portfolio/static/js/main.b705e385.js.map"
   },
   "entrypoints": [
     "static/css/main.2608b01a.css",
-    "static/js/main.dbdfb352.js"
+    "static/js/main.b705e385.js"
   ]
 }
