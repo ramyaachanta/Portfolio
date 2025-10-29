@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7f888c5e.css",
+    "main.css": "/Portfolio/static/css/main.2b3f90df.css",
     "main.js": "/Portfolio/static/js/main.91d4fcfe.js",
     "static/media/RamyaSri_Achanta_Resume.pdf": "/Portfolio/static/media/RamyaSri_Achanta_Resume.2f6eb3e1b3720ae94ed1.pdf",
     "static/media/gameDark.png": "/Portfolio/static/media/gameDark.b3b846f6c7bba18ab4f1.png",
@@ -8,11 +8,11 @@
     "static/media/portfolioDark.png": "/Portfolio/static/media/portfolioDark.0291f2742f74b1760071.png",
     "static/media/portfolioLight.png": "/Portfolio/static/media/portfolioLight.45272d7711549d27ddd8.png",
     "index.html": "/Portfolio/index.html",
-    "main.7f888c5e.css.map": "/Portfolio/static/css/main.7f888c5e.css.map",
+    "main.2b3f90df.css.map": "/Portfolio/static/css/main.2b3f90df.css.map",
     "main.91d4fcfe.js.map": "/Portfolio/static/js/main.91d4fcfe.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f888c5e.css",
+    "static/css/main.2b3f90df.css",
     "static/js/main.91d4fcfe.js"
   ]
 }
