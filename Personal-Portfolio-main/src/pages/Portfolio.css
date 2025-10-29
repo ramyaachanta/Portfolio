@@ -119,7 +119,7 @@
 }
 
 [data-theme="dark"] .techstack__label { 
-    color: #a4cbbf; 
+    color: #b7825f; 
 }
 
 .techstack__card {
@@ -136,8 +136,8 @@
 }
 
 [data-theme="dark"] .techstack__card { 
-    background: #153429; 
-    border-color: #275a47; 
+    background: #f8f7f5; 
+    border-color: #b7825f; 
     box-shadow: 0 12px 30px rgba(0,0,0,.25); 
 }
 
@@ -154,9 +154,9 @@
 }
 
 [data-theme="dark"] .chip { 
-    background: #0f2b22; 
-    border-color: #274f42; 
-    color: #dbfff1; 
+    background: #ffffff; 
+    border-color: #b7825f; 
+    color: #5a4a4a; 
 }
 
 .chip svg { 
