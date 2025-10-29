@@ -169,27 +169,38 @@ const skills = [
 const dataportfolio = [{
     imgLight:courseLightImage,
     imgDark:courseDarkImage,
-    description: "Course Portal Application\n ",
-
+    title: "Course Portal Application",
+    description: "A comprehensive learning management system built with React and Node.js, featuring user authentication, course enrollment, and progress tracking for educational institutions.",
+    technologies: ["React", "Node.js", "MongoDB", "JWT", "Express"],
+    impact: "500+ Students Enrolled",
     link: "https://github.com/ramyaachanta/Course-Portal",
 },
    
 {
     imgLight: quizLightImage,
     imgDark: quizDarkImage,
-    description: "Quizter",
+    title: "Quizter",
+    description: "An interactive quiz platform with real-time scoring, multiple question types, and analytics dashboard for educators and students.",
+    technologies: ["React", "JavaScript", "CSS3", "Local Storage", "Responsive Design"],
+    impact: "95% User Satisfaction",
     link: "https://github.com/DhivakarK-git/Quizter",
 },
 {
     imgLight: portfolioLightImage,
     imgDark: portfolioDarkImage,
-    description: "Professional Portfolio",
+    title: "Professional Portfolio",
+    description: "A modern, responsive portfolio website showcasing projects and skills with dark/light theme toggle and smooth animations.",
+    technologies: ["React", "CSS3", "JavaScript", "React Router", "EmailJS"],
+    impact: "Mobile-First Design",
     link: "https://github.com/ramyaachanta/Portfolio",
 },
 {
     imgLight: gameLightImage,
     imgDark: gameDarkImage,
-    description: "Tic Tac Toe Game",
+    title: "Mars Colonization Game",
+    description: "A strategic space exploration game built with modern web technologies, featuring resource management and multiplayer capabilities.",
+    technologies: ["JavaScript", "HTML5", "CSS3", "Canvas API", "Game Logic"],
+    impact: "Multiplayer Support",
     link: "https://github.com/Chinnu2000/Mars-colonization",
 }
 

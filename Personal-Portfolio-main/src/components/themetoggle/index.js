@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { WiMoonAltWaningCrescent4 } from "react-icons/wi";
+import { WiDaySunny } from "react-icons/wi";
 
 const Themetoggle = () => {
   const [theme, setTheme] = useState(() => {
@@ -9,7 +10,7 @@ const Themetoggle = () => {
   const themetoggle = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
-    localStorage.setItem('theme', theme);
+    localStorage.setItem('theme', newTheme);
     window.dispatchEvent(new Event("themechange"));
   };
 
@@ -20,8 +21,8 @@ const Themetoggle = () => {
   }, [theme]);
 
   return (
-      <div className="nav_ac" onClick={themetoggle}>
-        <WiMoonAltWaningCrescent4 />
+      <div className="theme-toggle" onClick={themetoggle} title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}>
+        {theme === "dark" ? <WiDaySunny /> : <WiMoonAltWaningCrescent4 />}
       </div>
   );
 };
