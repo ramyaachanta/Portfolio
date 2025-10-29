@@ -114,7 +114,7 @@
 .techstack__label { 
     letter-spacing: .35em; 
     font-size: .8rem; 
-    color: #5a7a71; 
+    color: #b7825f; 
     margin-bottom: 12px; 
 }
 
@@ -126,13 +126,13 @@
     margin: 0 auto;
     max-width: 920px;
     background: #ffffff;
-    border: 1px solid #e8f2ec;
+    border: 1px solid #b7825f;
     border-radius: 18px;
     padding: 18px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 12px;
-    box-shadow: 0 12px 30px rgba(0,0,0,.06);
+    box-shadow: 0 12px 30px rgba(183,130,95,.1);
 }
 
 [data-theme="dark"] .techstack__card { 
@@ -148,9 +148,9 @@
     justify-content: center;
     padding: 12px 14px;
     border-radius: 12px;
-    background: #f5fbf8;
-    border: 1px solid #d7efe3;
-    color: #0f3b2b;
+    background: #f8f7f5;
+    border: 1px solid #b7825f;
+    color: #5a4a4a;
 }
 
 [data-theme="dark"] .chip { 
