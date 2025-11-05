@@ -105,6 +105,214 @@
     border-radius: 2px;
 }
 
+/* About Main Section */
+.about-main {
+    margin-top: 2rem;
+    align-items: flex-start;
+}
+
+.about-left {
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-right {
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Circular Profile Image */
+.profile-image-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+}
+
+.profile-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image-circular {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.profile-image-circular:hover {
+    transform: scale(1.05);
+}
+
+[data-theme="dark"] .profile-image-circular {
+    border-color: var(--accent-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* Tagline */
+.about-tagline {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+[data-theme="dark"] .about-tagline {
+    color: var(--accent-color);
+}
+
+/* About Text */
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color-2);
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+/* Beyond the Code Card */
+.beyond-card {
+    background: white;
+    border: 2px solid var(--accent-color);
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] .beyond-card {
+    background: #2a2a2a;
+    border-color: var(--accent-color);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.beyond-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="dark"] .beyond-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.beyond-card .card-body {
+    padding: 2.5rem 2rem;
+}
+
+.beyond-text {
+    color: var(--text-color-2);
+    line-height: 1.9;
+    margin: 0;
+    font-size: 1.05rem;
+    text-align: left;
+}
+
+/* Achievements Grid */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 0;
+    align-items: start;
+}
+
+.achievement-card {
+    background: white;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0;
+    height: fit-content;
+}
+
+[data-theme="dark"] .achievement-card {
+    background: #2a2a2a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.achievement-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="dark"] .achievement-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.achievement-card .card-body {
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.achievement-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.achievement-label {
+    font-size: 0.95rem;
+    color: var(--text-color-2);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Staggered positioning for achievement cards */
+.achievement-1 {
+    margin-top: 0;
+}
+
+.achievement-2 {
+    margin-top: 20px;
+}
+
+.achievement-3 {
+    margin-top: -10px;
+}
+
+.achievement-4 {
+    margin-top: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px) {
+    .about-left,
+    .about-right {
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .profile-image-circular {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-tagline {
+        font-size: 1.5rem;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .achievement-1,
+    .achievement-2,
+    .achievement-3,
+    .achievement-4 {
+        margin-top: 0;
+    }
+}
+
 .education-item, .work-item {
     position: relative;
     padding: 1.5rem;

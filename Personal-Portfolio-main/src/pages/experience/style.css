@@ -1,0 +1,68 @@
+.Experience-section .exp-card {
+  background: var(--bs-body-bg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.Experience-section .exp-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.Experience-section .exp-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+}
+
+.Experience-section .company-logo {
+  height: 80px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.Experience-section .company-logo.logo-small {
+  max-width: 120px;
+  height: 60px;
+}
+
+.Experience-section .exp-header-content {
+  flex: 1;
+}
+
+.Experience-section .company-text {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.Experience-section .date-location {
+  text-align: right;
+}
+
+.Experience-section .dates {
+  font-weight: 600;
+}
+
+.Experience-section .exp-summary {
+  margin-top: 0.5rem;
+}
+
+.Experience-section .exp-tags .badge {
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.Experience-section .exp-list {
+  margin: 0.5rem 0 0 1rem;
+}
+
+.Experience-section .exp-list li {
+  margin-bottom: 0.35rem;
+}
+
+

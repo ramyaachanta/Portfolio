@@ -29,7 +29,15 @@ const introdata = {
 
 const dataabout = {
     title: "A bit about myself",
-    aboutme: "I’m a Full Stack Developer and Computer Science graduate student at the University of Houston-Clear Lake, with hands-on experience across software engineering, backend development, and DevOps. I've worked extensively with microservices, CI/CD pipelines, and containerization, and I'm proficient in Golang, Kotlin, SQL, and Docker. My past roles include impactful projects in the tech and logistic sectors, where I contributed to multi-tenancy and SaaS architecture. I'm passionate about creating secure, scalable solutions and love diving into complex technical challenges. Outside of work, I enjoy learning new technologies and expanding my skills.",
+    tagline: "A Full-Stack Developer Transforming Ideas into Scalable Solutions",
+    aboutme: "I'm a Full Stack Developer and Computer Science graduate student at the University of Houston-Clear Lake, with hands-on experience across software engineering, backend development, and DevOps. I've worked extensively with microservices, CI/CD pipelines, and containerization, and I'm proficient in Golang, Kotlin, SQL, and Docker. My past roles include impactful projects in the tech and logistic sectors, where I contributed to multi-tenancy and SaaS architecture. I'm passionate about creating secure, scalable solutions and love diving into complex technical challenges.",
+    beyond: "I mentor students, contribute to open-source projects, and enjoy exploring new technologies. I love finding elegant solutions to complex problems, whether in code, architecture, or system design. I love drawing, exploring AI tools, and playing badminton.",
+    achievements: [
+        { value: "50K+", label: "Daily Transactions Processed" },
+        { value: "99.9%", label: "System Uptime Maintained" },
+        { value: "3+", label: "Product Lines Migrated" },
+        { value: "2M+", label: "Users Impacted" }
+    ]
 };
 
 const education = {
@@ -84,6 +92,76 @@ const worktimeline = [
         where: "Qentelli",
         date: "June 2020 - April 2021",
     },
+];
+
+
+const experience = [
+    {
+        company: "Titan Commercial",
+        role: "Data Analyst (Internship)",
+        location: "Houston, TX",
+        dates: "July 2025 – Present",
+        summary: "Automated AWS-driven marketing workflows and built finance-ready BI dashboards.",
+        tech: ["AWS", "Lambda", "ECS", "S3", "Power BI"],
+        logo:"https://media.licdn.com/dms/image/v2/C560BAQGawRy47wjgeQ/company-logo_200_200/company-logo_200_200/0/1678562675824?e=1764201600&v=beta&t=oKlIQylNlSQcz0G6h1XB7kM3OK2kh5DhePAzauXRQRA",
+        bullets: [
+            "Designed and deployed automated AWS pipelines (Lambda, ECS, S3) integrated with Make, AutoCAD, and InDesign to auto‑generate property flyers and templates, cutting manual work from 8hrs to 60s for 50+ listings weekly.",
+            "Built Power BI dashboards for receivables, property revenue, and KPIs to support finance leadership decisions in real time."
+        ]
+    },
+    {
+        company: "Object Tech, Inc",
+        role: "ML Software Developer (Internship)",
+        location: "Fremont, CA",
+        dates: "May 2025 – Present",
+        summary: "Shipped parsing pipeline and low‑latency RAG chatbot across serverless microservices.",
+        tech: ["Python", "FastAPI", "Django", "AWS", "FAISS", "LLM"],
+        logo:"https://media.licdn.com/dms/image/v2/D560BAQE8oWC_jtekVw/company-logo_200_200/company-logo_200_200/0/1736547207980/object_tech_inc_logo?e=1764201600&v=beta&t=2_l8Pz4fCtVNzbLJPd1zBnGzddUvMDybWg2Kxw0uMr8",
+        bullets: [
+            "Prototyped and shipped an OmniParser + API pipeline in Python (FastAPI/Django) on AWS Lambda & ECS to automate document/image parsing workflows.",
+            "Designed and scaled APIs (OpenAPI/GraphQL) enabling consistent integration across microservices.",
+            "Integrated a deep‑learning and RAG chatbot (FAISS + LLM streaming), reducing Q&A latency to <200ms and improving parsing accuracy by 40%."
+        ]
+    },
+    {
+        company: "Radar Ventures Private Limited / WIzFreight",
+        role: "Software Development Engineer - I",
+        location: "Chennai, India",
+        dates: "Sep 2022 – Dec 2023",
+        summary: "Maintained high‑availability logistics microservices and modernized dashboards to Next.js.",
+        tech: ["Go", "gRPC", "REST", "Next.js", "PostgreSQL"],
+        logo:"https://wizfreight.com/_next/image?url=%2FWIZ.svg&w=256&q=75",
+        bullets: [
+            "Developed and optimized Golang microservices (REST & gRPC) for logistics with 99.9% uptime handling 50K+ daily transactions.",
+            "Led migration of 3+ product lines to Next.js, reducing dashboard load times by 20% for 5K+ daily users.",
+            "Participated in Agile/Scrum, on‑call production support, ensuring scalability and reliability."
+        ]
+    },
+    {
+        company: "PricewaterhouseCoopers India (PwC)",
+        role: "Risk Advisory (Internship)",
+        location: "Hyderabad, India",
+        dates: "Jan 2022 – Jul 2022",
+        summary: "Automated DevSecOps checks reducing manual validation and speeding deployments.",
+        tech: ["Python", "Automation", "DevSecOps"],
+        logo:"https://media.licdn.com/dms/image/v2/D4E0BAQFVfAbYbmcpvA/company-logo_200_200/B4EZaB6j58H0AI-/0/1745936334912/pwc_logo?e=1764201600&v=beta&t=85Lu9rqXV7zbXOV-WDrHDJmvYK6OYaS9tqwI1G9PzbQ",
+        bullets: [
+            "Built Python automation for DevSecOps, reducing manual validation time by 60% and improving deployment efficiency."
+        ]
+    },
+    {
+        company: "Microsoft India (R&D) Pvt Ltd",
+        role: "Software Engineer (Internship)",
+        location: "Hyderabad, India",
+        dates: "Jun 2021 – Aug 2021",
+        summary: "Delivered Excel Online 'Show Changes' feature to enhance collaborative editing.",
+        tech: ["React", "TypeScript", "Office 365"],
+        logo: "https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_200_200/B56ZYQ0mrGGoAM-/0/1744038948046/microsoft_logo?e=1764201600&v=beta&t=KB6hf0a9t5ppjsZof4lGcyd31ASDeI0YOZCRIck-r54",
+        bullets: [
+            "Developed the 'Show Changes' feature in Excel Online using React.js, improving collaborative editing visibility for 2M+ users.",
+            "Collaborated with PMs and QA to validate user flows for seamless integration into Microsoft Office 365."
+        ]
+    }
 ];
 
 
@@ -169,6 +247,15 @@ const skills = [
 const dataportfolio = [{
     imgLight:courseLightImage,
     imgDark:courseDarkImage,
+    title: "GHC 2025 RAG Agent",
+    description: "A RAG (Retrieval-Augmented Generation) agent built using ChatGPT for Grace Hopper Celebration 2025 by AnitaB.org. A career accelerator, networking guide, and confidence partner for GHC attendees, providing strategic guidance and networking support.",
+    technologies: ["ChatGPT", "RAG", "AI/ML", "Python", "NLP"],
+    impact: "GHC 2025 Strategy Coach",
+    link: "https://chatgpt.com/g/g-690b6928ac7481919c4a31d0a5f2b381-ghc-2025",
+},
+{
+    imgLight:courseLightImage,
+    imgDark:courseDarkImage,
     title: "Course Portal Application",
     description: "A comprehensive learning management system built with React and Node.js, featuring user authentication, course enrollment, and progress tracking for educational institutions.",
     technologies: ["React", "Node.js", "MongoDB", "JWT", "Express"],
@@ -236,6 +323,7 @@ export {
     testimonials,
     education,
     worktimeline,
+    experience,
     dataportfolio,
     skills,
     introdata,

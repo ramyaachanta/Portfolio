@@ -9,6 +9,7 @@ import {
   worktimeline,
   skills,
 } from "../../content_option";
+import profilePic from "../../images/profilepic.jpg";
 
 
 export const About = () => {
@@ -28,12 +29,36 @@ export const About = () => {
             </Col>
           </Row>
 
-          <Row className="sec_sp">
-            <Col lg="5">
-              <h3 className="section-title">{dataabout.title}</h3>
+          <Row className="sec_sp about-main align-items-start">
+            <Col lg="6" className="about-left">
+              <div className="profile-image-wrapper">
+                <div className="profile-image-container">
+                  <img 
+                    src={profilePic} 
+                    alt="Ramya Sri Achanta" 
+                    className="profile-image-circular"
+                  />
+                </div>
+              </div>
+              <h2 className="about-tagline">{dataabout.tagline}</h2>
+              <p className="about-text">{dataabout.aboutme}</p>
             </Col>
-            <Col lg="7" className="d-flex align-items-center">
-              <p style={{ textAlign: "justify" }}>{dataabout.aboutme}</p>
+            <Col lg="6" className="about-right">
+              <div className="achievements-grid">
+                {dataabout.achievements.map((achievement, index) => (
+                  <Card key={index} className={`achievement-card achievement-${index + 1}`}>
+                    <Card.Body>
+                      <div className="achievement-value">{achievement.value}</div>
+                      <div className="achievement-label">{achievement.label}</div>
+                    </Card.Body>
+                  </Card>
+                ))}
+              </div>
+              <Card className="beyond-card mt-4">
+                <Card.Body>
+                  <p className="beyond-text">{dataabout.beyond}</p>
+                </Card.Body>
+              </Card>
             </Col>
           </Row>
 

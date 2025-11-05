@@ -6,12 +6,14 @@ import { SiMysql, SiAmazonwebservices, SiPython, SiReact, SiDocker, SiJavascript
 import { FiActivity, FiBarChart2, FiCloud } from "react-icons/fi";
 import { About } from "./about";
 import { Projects } from "./projects";
+import { Experience } from "./experience";
 import { ContactUs } from "./contact";
 import { Socialicons } from "../components/socialicons";
 import Typewriter from "typewriter-effect";
 import "./home/style.css";
 import "./about/style.css";
 import "./projects/style.css";
+import "./experience/style.css";
 import "./contact/style.css";
 import "./Portfolio.css";
 
@@ -94,6 +96,11 @@ const Portfolio = () => {
         {/* About Section */}
         <section id="about" className="about-section">
           <About />
+        </section>
+
+        {/* Experience Section */}
+        <section id="experience" className="experience-section">
+          <Experience />
         </section>
 
         {/* Projects Section */}
