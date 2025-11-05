@@ -1,6 +1,13 @@
 .Experience-section .exp-card {
-  background: var(--bs-body-bg);
+  background: var(--bg-color);
   border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+[data-theme="dark"] .Experience-section .exp-card {
+  background: #2a2520;
+  border: 1px solid rgba(183, 130, 95, 0.3);
 }
 
 .Experience-section .exp-header {
@@ -38,6 +45,7 @@
 .Experience-section .company-text {
   font-weight: 600;
   font-size: 1.1rem;
+  color: var(--text-color);
 }
 
 .Experience-section .date-location {
@@ -46,15 +54,28 @@
 
 .Experience-section .dates {
   font-weight: 600;
+  color: var(--text-color);
+}
+
+.Experience-section .location {
+  color: var(--text-color-2);
 }
 
 .Experience-section .exp-summary {
   margin-top: 0.5rem;
+  color: var(--text-color-2);
 }
 
 .Experience-section .exp-tags .badge {
-  background-color: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background-color: rgba(183, 130, 95, 0.2);
+  border: 1px solid rgba(183, 130, 95, 0.4);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .Experience-section .exp-tags .badge {
+  background-color: rgba(183, 130, 95, 0.25);
+  border: 1px solid rgba(183, 130, 95, 0.5);
+  color: var(--text-color);
 }
 
 .Experience-section .exp-list {
@@ -63,6 +84,11 @@
 
 .Experience-section .exp-list li {
   margin-bottom: 0.35rem;
+  color: var(--text-color-2);
+}
+
+[data-theme="dark"] .Experience-section .exp-list li {
+  color: var(--text-color-2);
 }
 
 
