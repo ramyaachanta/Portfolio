@@ -1,0 +1,215 @@
+/* Single Page Portfolio Layout */
+.portfolio-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Hero Section - Full height */
+.impact-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 16px 64px;
+    background: #f8f7f5; /* light warm beige */
+    position: relative;
+}
+
+[data-theme="dark"] .impact-hero {
+    background: #2a2520; /* darker warm beige for dark theme */
+}
+
+.impact-hero__inner {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+.impact-hero__title {
+    font-size: clamp(2.25rem, 5vw, 3.25rem);
+    font-weight: 800;
+    letter-spacing: 0.2px;
+    margin: 0 0 8px;
+    color: var(--text-color);
+}
+
+.accent {
+    color: #b7825f; /* warm brown accent */
+}
+
+.impact-hero__subtitle {
+    font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+    font-weight: 700;
+    margin: 0 0 16px;
+    color: var(--text-color);
+}
+
+.impact-hero__desc {
+    max-width: 820px;
+    margin: 0 auto 28px;
+    color: #5a4a4a;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+[data-theme="dark"] .impact-hero__desc {
+    color: #d0c5b8;
+}
+
+.impact-hero__actions {
+    display: inline-flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cta {
+    border-radius: 999px;
+    padding: 12px 22px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
+    border: 1.5px solid transparent;
+}
+
+.cta--primary {
+    background: #b7825f;
+    color: #ffffff;
+    box-shadow: 0 10px 20px rgba(183,130,95,.2);
+}
+
+.cta--primary:hover { 
+    transform: translateY(-2px); 
+    box-shadow: 0 12px 24px rgba(183,130,95,.25); 
+    color: white;
+    text-decoration: none;
+}
+
+.cta--ghost {
+    background: transparent;
+    color: #5a4a4a;
+    border-color: #b7825f;
+}
+
+[data-theme="dark"] .cta--ghost { 
+    color: #d0c5b8; 
+    border-color: #b7825f; 
+}
+
+.cta--ghost:hover { 
+    background: rgba(183,130,95,.1); 
+    color: #5a4a4a;
+    text-decoration: none;
+}
+
+[data-theme="dark"] .cta--ghost:hover {
+    color: #d0c5b8;
+}
+
+/* Tech stack section */
+.techstack { 
+    margin-top: 8px; 
+}
+
+.techstack__label { 
+    letter-spacing: .35em; 
+    font-size: .8rem; 
+    color: #b7825f; 
+    margin-bottom: 12px; 
+}
+
+[data-theme="dark"] .techstack__label { 
+    color: #b7825f; 
+}
+
+.techstack__card {
+    margin: 0 auto;
+    max-width: 920px;
+    background: #ffffff;
+    border: 1px solid #b7825f;
+    border-radius: 18px;
+    padding: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    box-shadow: 0 12px 30px rgba(183,130,95,.1);
+}
+
+[data-theme="dark"] .techstack__card { 
+    background: #f8f7f5; 
+    border-color: #b7825f; 
+    box-shadow: 0 12px 30px rgba(0,0,0,.25); 
+}
+
+.chip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    padding: 12px 14px;
+    border-radius: 12px;
+    background: #f8f7f5;
+    border: 1px solid #b7825f;
+    color: #5a4a4a;
+}
+
+[data-theme="dark"] .chip { 
+    background: #ffffff; 
+    border-color: #b7825f; 
+    color: #5a4a4a; 
+}
+
+.chip svg { 
+    width: 20px; 
+    height: 20px; 
+}
+
+/* Section Layouts */
+.about-section,
+.projects-section,
+.contact-section {
+    min-height: 100vh;
+    padding: 120px 0 40px;
+    position: relative;
+    background: #f8f7f5; /* light warm beige */
+}
+
+.about-section {
+    padding-top: 120px;
+}
+
+.projects-section {
+    padding-top: 120px;
+}
+
+.contact-section {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+/* Dark theme overrides for all sections */
+[data-theme="dark"] .about-section,
+[data-theme="dark"] .projects-section,
+[data-theme="dark"] .contact-section {
+    background: #2a2520; /* darker warm beige for dark theme */
+}
+
+/* Mobile Responsive */
+@media (max-width: 640px) {
+    .impact-hero { 
+        padding: 40px 12px 56px; 
+    }
+    
+    .impact-hero__actions { 
+        display: flex; 
+        width: 100%; 
+        justify-content: center; 
+        flex-wrap: wrap;
+    }
+    
+    .about-section,
+    .projects-section,
+    .contact-section {
+        padding: 100px 0 40px;
+    }
+}
