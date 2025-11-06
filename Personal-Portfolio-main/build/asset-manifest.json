@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.fd225199.css",
-    "main.js": "/Portfolio/static/js/main.32e8a57b.js",
+    "main.css": "/Portfolio/static/css/main.5467e2a7.css",
+    "main.js": "/Portfolio/static/js/main.6d16f0fc.js",
     "static/media/profilepic.jpg": "/Portfolio/static/media/profilepic.86644db4dc267c0be171.jpg",
-    "static/media/RamyaSri_Achanta_Resume.pdf": "/Portfolio/static/media/RamyaSri_Achanta_Resume.2f6eb3e1b3720ae94ed1.pdf",
+    "static/media/RamyaSri_Achanta_Resume.pdf": "/Portfolio/static/media/RamyaSri_Achanta_Resume.ed8a9b61685052e927ea.pdf",
     "static/media/gameDark.png": "/Portfolio/static/media/gameDark.b3b846f6c7bba18ab4f1.png",
     "static/media/quizDark.png": "/Portfolio/static/media/quizDark.e018620358c914979559.png",
     "static/media/portfolioDark.png": "/Portfolio/static/media/portfolioDark.0291f2742f74b1760071.png",
     "static/media/portfolioLight.png": "/Portfolio/static/media/portfolioLight.45272d7711549d27ddd8.png",
     "index.html": "/Portfolio/index.html",
-    "main.fd225199.css.map": "/Portfolio/static/css/main.fd225199.css.map",
-    "main.32e8a57b.js.map": "/Portfolio/static/js/main.32e8a57b.js.map"
+    "main.5467e2a7.css.map": "/Portfolio/static/css/main.5467e2a7.css.map",
+    "main.6d16f0fc.js.map": "/Portfolio/static/js/main.6d16f0fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd225199.css",
-    "static/js/main.32e8a57b.js"
+    "static/css/main.5467e2a7.css",
+    "static/js/main.6d16f0fc.js"
   ]
 }
