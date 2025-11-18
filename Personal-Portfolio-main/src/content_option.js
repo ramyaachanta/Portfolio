@@ -247,6 +247,15 @@ const skills = [
 const dataportfolio = [{
     imgLight:courseLightImage,
     imgDark:courseDarkImage,
+    title: "AI Form Filling Assistant (Vision-Language + UI Automation)",
+    description: "Developed an AI assistant that interprets form screenshots using GPT-4o Vision to detect fields, labels, input types, dropdowns, and required actions with high accuracy. Built a structured JSON-based action generation pipeline (type, click, select, scroll) executed via Playwright to autonomously complete multi-step online forms. Implemented OCR text extraction, confidence scoring, fallback prompts, and user confirmation loops to ensure reliability, prevent hallucinations, and support safe auto-submission.",
+    technologies: ["GPT-4o Vision", "Playwright", "OCR", "Python", "JSON", "UI Automation"],
+    impact: "High Accuracy Form Detection",
+    link: "https://github.com/ramyaachanta/ai-form-filling-assistant",
+},
+{
+    imgLight:courseLightImage,
+    imgDark:courseDarkImage,
     title: "GHC 2025 RAG Agent",
     description: "A RAG (Retrieval-Augmented Generation) agent built using ChatGPT for Grace Hopper Celebration 2025 by AnitaB.org. A career accelerator, networking guide, and confidence partner for GHC attendees, providing strategic guidance and networking support.",
     technologies: ["ChatGPT", "RAG", "AI/ML", "Python", "Prompt Engineering"],
