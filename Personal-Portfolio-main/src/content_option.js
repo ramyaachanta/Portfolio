@@ -7,31 +7,40 @@ import portfolioDarkImage from './assets/images/portfolioDark.png';
 import gameDarkImage from './assets/images/gameDark.png';
 import gameLightImage from './assets/images/gameLight.png';
 
+// Company logos
+import reboundDynamicsLogo from './images/reboundynamics_logo.jpeg';
+import objectTechLogo from './images/object_tech_inc_logo.jpeg';
+import wizLogo from './images/wizfreight_logo.jpeg';
+import pwcLogo from './images/pwc_india_logo.jpeg';
+import microsoftLogo from './images/microsoft_logo.jpeg';
+import titanLogo from './images/titantexas_logo.jpeg';
+
+
 const logotext = "RA";
 const meta = {
     title: "Ramya Sri Achanta",
-    description: "I'm Ramya, full stack software engineer studying in University of Houston-Clear Lake",
+    description: "Senior Software Engineer with 2+ years of experience building scalable backend systems, microservices, and AI-powered platforms",
 };
 
 const introdata = {
-    title: "I’m Ramya Sri Achanta",
+    title: "I'm Ramya Sri Achanta",
     animated: {
-        first: "I'm a Full-Stack Developer",
-        second: "Graduate student at University of Houston-Clear Lake",
-        third: "Member of Student Conduct Council - Hearing Board",
-        fourth: "Graduate Teaching Assistant for Dr. Lisa Lacher and Dr.Ahmed Abukmail",
-        fifth: "Experienced in software and web app development",
-        sixth: "Skilled in backend services and DevOps",
+        first: "I'm a Senior Software Engineer",
+        second: "Building scalable backend systems & AI-powered platforms",
+        third: "Expert in microservices, distributed systems & cloud infrastructure",
+        fourth: "Passionate about reliable, intelligent systems at scale",
+        fifth: "Experienced in Python, Go, and AI/ML technologies",
+        sixth: "Skilled in LLMs, RAG pipelines, and vision-language models",
     },
-    description: "I'm a Computer Science graduate student at the University of Houston-Clear Lake, with experience in full-stack development, backend services, and DevOps. My roles as a Graduate Teaching Assistant and a member of the Student Conduct Council have strengthened my leadership and instructional skills. With a background in microservices, CI/CD pipelines, and system security, I’ve contributed to impactful projects in the tech industry. I’m passionate about developing scalable, secure solutions that address complex challenges and enhance user experience.",
+    description: "Senior Software Engineer with 2+ years of experience building scalable backend systems, microservices, and AI-powered platforms. Strong in Python, Go, distributed systems, and cloud infrastructure (AWS, Azure). Proven experience designing transactional systems and integrating LLMs, RAG pipelines, and vision-language models into production workflows. Passionate about building reliable, intelligent systems at scale.",
 };
 
 
 const dataabout = {
     title: "A bit about myself",
-    tagline: "A Full-Stack Developer Transforming Ideas into Scalable Solutions",
-    aboutme: "I'm a Full Stack Developer and Computer Science graduate student at the University of Houston-Clear Lake, with hands-on experience across software engineering, backend development, and DevOps. I've worked extensively with microservices, CI/CD pipelines, and containerization, and I'm proficient in Golang, Kotlin, SQL, and Docker. My past roles include impactful projects in the tech and logistic sectors, where I contributed to multi-tenancy and SaaS architecture. I'm passionate about creating secure, scalable solutions and love diving into complex technical challenges.",
-    beyond: "I mentor students, contribute to open-source projects, and enjoy exploring new technologies. I love finding elegant solutions to complex problems, whether in code, architecture, or system design. I love drawing, exploring AI tools, and playing badminton.",
+    tagline: "Senior Software Engineer Building Scalable Systems & AI-Powered Platforms",
+    aboutme: "Senior Software Engineer with 2+ years of experience building scalable backend systems, microservices, and AI-powered platforms. Strong expertise in Python, Go, distributed systems, and cloud infrastructure (AWS, Azure). Proven experience designing transactional systems and integrating LLMs, RAG pipelines, and vision-language models into production workflows. Passionate about building reliable, intelligent systems at scale with strong availability, fault tolerance, and production reliability guarantees.",
+    beyond: "I mentor developers, contribute to open-source projects, and enjoy exploring cutting-edge AI technologies. I love finding elegant solutions to complex problems, whether in code, architecture, or system design. I'm passionate about drawing, exploring AI tools, and playing badminton.",
     achievements: [
         { value: "50K+", label: "Daily Transactions Processed" },
         { value: "99.9%", label: "System Uptime Maintained" },
@@ -43,34 +52,39 @@ const dataabout = {
 const education = {
     title: "Education",
     description1: "University of Houston-Clear Lake, Houston, TX",
-    major1: "Master of Science in Computer Science",
+    major1: "Master of Science in Computer Science (GPA: 3.84/4.0)",
     year1: "2024-2025",
     description2: "Amrita Vishwa Vidyapeetham, Coimbatore, India",
-    major2: "Bachelor of Technology in Computer Science and Engineering",
+    major2: "Bachelor of Technology in Computer Science and Engineering (GPA: 3.05/4.0)",
     year2: "2018-2022",
 };
 
 
 const worktimeline = [
     {
+        jobtitle: "Senior Software Developer",
+        where: "Rebound Dynamics",
+        date: "Jan 2026 – Present",
+    },
+    {
         jobtitle: "Data Analyst Intern",
         where: "Titan Commercial",
-        date: "July 2025 – Present",
+        date: "July 2025 – Dec 2025",
     },
     {
         jobtitle: "ML Software Developer Intern",
         where: "Object Tech, Inc",
-        date: "May 2025 – Present",
+        date: "May 2025 – Dec 2025",
     },
     {
         jobtitle: "Student Conduct Council - Hearing Board Member",
         where: "University of Houston-Clear Lake",
-        date: "October 2024 - Present",
+        date: "October 2024 - December 2025",
     },
     {
         jobtitle: "Graduate Teaching Assistant",
         where: "University of Houston-Clear Lake",
-        date: "September 2024 - Present",
+        date: "September 2024 - May 2025",
     },
     {
         jobtitle: "Full Stack Developer",
@@ -97,13 +111,29 @@ const worktimeline = [
 
 const experience = [
     {
+        company: "Rebound Dynamics",
+        role: "Senior Software Developer",
+        location: "Houston, TX",
+        dates: "Jan 2026 – Present",
+        summary: "Architected scalable inventory management system with real-time stock visibility and warehouse operations.",
+        tech: ["Microservices", "REST APIs", "Transactional Systems", "System Design", "SDLC"],
+        logo: reboundDynamicsLogo,
+        bullets: [
+            "Architected and delivered a scalable inventory management system with real-time stock visibility, SKU lifecycle tracking, and warehouse operations.",
+            "Designed backend microservices, transactional data flows, REST APIs to support inventory reconciliation, replenishment workflows, & auditability.",
+            "Owned end-to-end SDLC including system design, sprint planning, technical decision-making, code reviews, deployments, and production support.",
+            "Led technical mentorship & enforced coding standards, automated testing, documentation to ensure performance, reliability & long-term scalability.",
+            "Supported high-throughput operations by designing low-latency services with strong availability, fault tolerance & production reliability guarantees."
+        ]
+    },
+    {
         company: "Titan Commercial",
         role: "Data Analyst (Internship)",
         location: "Houston, TX",
         dates: "July 2025 – Present",
         summary: "Automated AWS-driven marketing workflows and built finance-ready BI dashboards.",
         tech: ["AWS", "Lambda", "ECS", "S3", "Power BI"],
-        logo:"https://media.licdn.com/dms/image/v2/C560BAQGawRy47wjgeQ/company-logo_200_200/company-logo_200_200/0/1678562675824?e=1764201600&v=beta&t=oKlIQylNlSQcz0G6h1XB7kM3OK2kh5DhePAzauXRQRA",
+        logo: titanLogo,
         bullets: [
             "Designed and deployed automated AWS pipelines (Lambda, ECS, S3) integrated with Make, AutoCAD, and InDesign to auto‑generate property flyers and templates, cutting manual work from 8hrs to 60s for 50+ listings weekly.",
             "Built Power BI dashboards for receivables, property revenue, and KPIs to support finance leadership decisions in real time."
@@ -113,14 +143,16 @@ const experience = [
         company: "Object Tech, Inc",
         role: "ML Software Developer (Internship)",
         location: "Fremont, CA",
-        dates: "May 2025 – Present",
-        summary: "Shipped parsing pipeline and low‑latency RAG chatbot across serverless microservices.",
-        tech: ["Python", "FastAPI", "Django", "AWS", "FAISS", "LLM"],
-        logo:"https://media.licdn.com/dms/image/v2/D560BAQE8oWC_jtekVw/company-logo_200_200/company-logo_200_200/0/1736547207980/object_tech_inc_logo?e=1764201600&v=beta&t=2_l8Pz4fCtVNzbLJPd1zBnGzddUvMDybWg2Kxw0uMr8",
+        dates: "May 2025 – Dec 2025",
+        summary: "Built multimodal LLM → OmniParser → action execution pipeline enabling autonomous UI interaction.",
+        tech: ["Python", "LLMs", "OmniParser", "RAG", "FAISS", "OpenAPI", "GraphQL", "AWS"],
+        logo: objectTechLogo,
         bullets: [
-            "Prototyped and shipped an OmniParser + API pipeline in Python (FastAPI/Django) on AWS Lambda & ECS to automate document/image parsing workflows.",
-            "Designed and scaled APIs (OpenAPI/GraphQL) enabling consistent integration across microservices.",
-            "Integrated a deep‑learning and RAG chatbot (FAISS + LLM streaming), reducing Q&A latency to <200ms and improving parsing accuracy by 40%."
+            "Built a multimodal LLM → OmniParser → action execution pipeline enabling autonomous UI interaction via schema-constrained instructions.",
+            "Designed prompt orchestration workflows to generate deterministic action plans with tool-calling-like behavior (click, type, hover, app-switch).",
+            "Implemented validation layers, fallback prompts, and guardrail logic to reduce hallucinations and improve parsing reliability by 40%.",
+            "Developed scalable APIs (OpenAPI/GraphQL) for agent interaction across distributed microservices.",
+            "Optimized real-time Q&A with streaming LLM responses and FAISS-based retrieval achieving less than 200ms latency."
         ]
     },
     {
@@ -130,7 +162,7 @@ const experience = [
         dates: "Sep 2022 – Dec 2023",
         summary: "Maintained high‑availability logistics microservices and modernized dashboards to Next.js.",
         tech: ["Go", "gRPC", "REST", "Next.js", "PostgreSQL"],
-        logo:"https://wizfreight.com/_next/image?url=%2FWIZ.svg&w=256&q=75",
+        logo: wizLogo,
         bullets: [
             "Developed and optimized Golang microservices (REST & gRPC) for logistics with 99.9% uptime handling 50K+ daily transactions.",
             "Led migration of 3+ product lines to Next.js, reducing dashboard load times by 20% for 5K+ daily users.",
@@ -139,14 +171,14 @@ const experience = [
     },
     {
         company: "PricewaterhouseCoopers India (PwC)",
-        role: "Risk Advisory (Internship)",
+        role: "DevSecOps (Internship)",
         location: "Hyderabad, India",
         dates: "Jan 2022 – Jul 2022",
         summary: "Automated DevSecOps checks reducing manual validation and speeding deployments.",
         tech: ["Python", "Automation", "DevSecOps"],
-        logo:"https://media.licdn.com/dms/image/v2/D4E0BAQFVfAbYbmcpvA/company-logo_200_200/B4EZaB6j58H0AI-/0/1745936334912/pwc_logo?e=1764201600&v=beta&t=85Lu9rqXV7zbXOV-WDrHDJmvYK6OYaS9tqwI1G9PzbQ",
+        logo: pwcLogo,
         bullets: [
-            "Built Python automation for DevSecOps, reducing manual validation time by 60% and improving deployment efficiency."
+            "Built Python automation tools for DevSecOps workflows, reducing manual validation time by 60% for any kind of workflow."
         ]
     },
     {
@@ -156,10 +188,10 @@ const experience = [
         dates: "Jun 2021 – Aug 2021",
         summary: "Delivered Excel Online 'Show Changes' feature to enhance collaborative editing.",
         tech: ["React", "TypeScript", "Office 365"],
-        logo: "https://media.licdn.com/dms/image/v2/D560BAQH32RJQCl3dDQ/company-logo_200_200/B56ZYQ0mrGGoAM-/0/1744038948046/microsoft_logo?e=1764201600&v=beta&t=KB6hf0a9t5ppjsZof4lGcyd31ASDeI0YOZCRIck-r54",
+        logo: microsoftLogo,
         bullets: [
-            "Developed the 'Show Changes' feature in Excel Online using React.js, improving collaborative editing visibility for 2M+ users.",
-            "Collaborated with PMs and QA to validate user flows for seamless integration into Microsoft Office 365."
+            "Expanding the 'Show Changes' feature in Excel Online using React.js, enhancing collaborative editing visibility for over 2M+ users.",
+            "Collaborated with product managers and QA teams to test and validate user flows for seamless integration into Microsoft Office 365."
         ]
     }
 ];
@@ -175,6 +207,7 @@ const skills = [
             { name: "JavaScript", value: 85 },
             { name: "C++", value: 75 },
             { name: "Kotlin", value: 70 },
+            { name: "C# .NET Core", value: 75 },
             { name: "UNIX", value: 70 }
         ]
     },
@@ -197,7 +230,9 @@ const skills = [
             { name: "Flask", value: 80 },
             { name: "Node.js", value: 80 },
             { name: "RESTful API", value: 85 },
-            { name: "gRPC", value: 70 }
+            { name: "gRPC", value: 70 },
+            { name: "GraphQL", value: 75 },
+            { name: "WebSocket", value: 70 }
         ]
     },
     {
@@ -208,7 +243,10 @@ const skills = [
             { name: "Microsoft Azure", value: 75 },
             { name: "GCP", value: 70 },
             { name: "GitHub Actions", value: 70 },
-            { name: "Jenkins", value: 65 }
+            { name: "Jenkins", value: 65 },
+            { name: "Distributed Systems", value: 85 },
+            { name: "Microservices", value: 85 },
+            { name: "Transactional Systems", value: 80 }
         ]
     },
     {
@@ -219,16 +257,34 @@ const skills = [
             { name: "MongoDB", value: 80 },
             { name: "SQLite", value: 75 },
             { name: "Power BI", value: 85 },
-            { name: "Power Query", value: 75 }
+            { name: "Power Query", value: 75 },
+            { name: "Visual Studio", value: 80 },
+            { name: "PyCharm", value: 85 },
+            { name: "Anaconda", value: 80 },
+            { name: "Figma", value: 75 },
+            { name: "PyTest", value: 80 },
+            { name: "JUnit", value: 75 },
+            { name: "Jest", value: 75 },
+            { name: "Apache", value: 70 },
+            { name: "Nginx", value: 70 }
         ]
     },
     {
         category: "Data & ML",
         items: [
+            { name: "PyTorch", value: 80 },
+            { name: "TensorFlow", value: 75 },
             { name: "Scikit-learn", value: 80 },
             { name: "Pandas", value: 85 },
             { name: "NumPy", value: 85 },
             { name: "Matplotlib", value: 80 },
+            { name: "LLMs", value: 85 },
+            { name: "RAG", value: 85 },
+            { name: "Prompt Engineering", value: 85 },
+            { name: "Vision-Language Models", value: 80 },
+            { name: "OmniParser", value: 80 },
+            { name: "OCR", value: 75 },
+            { name: "Embeddings", value: 80 },
             { name: "NLP", value: 75 },
             { name: "Neural Networks", value: 70 }
         ]

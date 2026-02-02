@@ -39,6 +39,10 @@ export const Experience = () => {
                                 src={job.logo} 
                                 alt={`${job.company} logo`} 
                                 className={`company-logo ${job.company.includes("Radar Ventures") || job.company.includes("Wiz") ? "logo-small" : ""}`}
+                                onError={(e) => {
+                                    e.target.style.display = 'none';
+                                }}
+                                loading="lazy"
                               />
                           )}
                           <div className="exp-header-content">
